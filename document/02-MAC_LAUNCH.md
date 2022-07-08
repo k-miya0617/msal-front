@@ -21,6 +21,16 @@
      "build": "next build",
      "start": "set NODE_ENV=production&&set HTTPS=true&&node ./server.js",
      "start:http": "set NODE_ENV=production&&set HTTPS=false&&node ./server.js",
+     "start:m": "NODE_ENV=production, HTTPS=true node ./server.js",
+     "start:m:http": "NODE_ENV=production, HTTPS=false node ./server.js",
      "lint": "next lint"
    },
    ```
+
+   ※補足
+
+   - `$ npm run dev:m` を実行すると、Mac や Linux で HTTPS の開発サーバが起動する。
+   - `$ npm run dev:m:http` を実行すると、Mac や Linux で HTTP の開発サーバが起動する。
+
+2. Mac や Linux で開発サーバを起動する
+   `$ npm run dev:m` を実行する
