@@ -10,6 +10,8 @@
     "build": "next build",
     "start": "set NODE_ENV=production&&set HTTPS=true&&node ./server.js",
     "start:http": "set NODE_ENV=production&&set HTTPS=false&&node ./server.js",
+    "start:m": "NODE_ENV=production, HTTPS=true node ./server.js",
+    "start:m:http": "NODE_ENV=production, HTTPS=false node ./server.js",
     "lint": "next lint"
   },
   "dependencies": {
