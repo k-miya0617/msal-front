@@ -29,6 +29,8 @@ https://zenn.dev/sotszk/articles/b4e6a4e19d2e35
 3. 生成した証明書をプロジェクトへ移動する  
    配置先は /certificates/ とする
 
+   ※セキュリティ的な問題を防ぐため、一般的に、証明書は git の追跡対象外とすることが多い。このドキュメントでは、git の追跡対象外にする手順は解説しない。
+
 4. express サーバのインストール  
    以下のコマンドを実行する。  
    `$ npm install express`
@@ -114,4 +116,4 @@ https://zenn.dev/sotszk/articles/b4e6a4e19d2e35
 
 8. トラブルシューティング
    - 起動時にターミナルに`You chose to launch with HTTPS, but can't exist a certificate. The server will launch with HTTP.`と出力される。  
-     → このエラーは、適切なディレクトリに証明書ファイルが存在しなかったため、HTTP でサーバが起動したことを示しています。/certificates/ に localhost.crt と localhost.key が存在することを確認してください。
+     → このエラーは、適切なディレクトリに証明書ファイルが存在しなかったため、HTTP でサーバが起動したことを示している。/certificates/ に localhost.crt と localhost.key が存在することを確認してください。
