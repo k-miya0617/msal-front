@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "set HTTPS=true&&node ./server.js",
+    "dev:http": "set HTTPS=false&&node ./server.js",
     "build": "next build",
-    "start": "next start",
+    "start": "set NODE_ENV=production&&set HTTPS=true&&node ./server.js",
+    "start:http": "set NODE_ENV=production&&set HTTPS=false&&node ./server.js",
     "lint": "next lint"
   },
   "dependencies": {

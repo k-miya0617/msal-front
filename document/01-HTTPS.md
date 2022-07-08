@@ -98,7 +98,7 @@ https://zenn.dev/sotszk/articles/b4e6a4e19d2e35
    ```json
    "scripts": {
      "dev": "set HTTPS=true&&node ./server.js",
-     "dev:http": "set HTTPS=false&&node ./server/js",
+     "dev:http": "set HTTPS=false&&node ./server.js",
      "build": "next build",
      "start": "set NODE_ENV=production&&set HTTPS=true&&node ./server.js",
      "start:http": "set NODE_ENV=production&&set HTTPS=false&&node ./server.js",
